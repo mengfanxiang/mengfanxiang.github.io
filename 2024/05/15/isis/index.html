@@ -1,0 +1,180 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>isis | MY BLOG</title><meta name="author" content="空明."><meta name="copyright" content="空明."><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="中间系统到中间系统（IS-IS）什么是is-is?中间系统到中间系统IS-IS（Intermediate System to Intermediate System），是一种内部网关协议（IGP），用于自治系统内部。 IS-IS最初是国际化标准组织ISO为它的无连接网络协议CLNP设计的一种动态路由协议。后来IETF对IS-IS进行了扩充和修改，使其能够支持IP网络，修订后的IS-IS协议被称为集">
+<meta property="og:type" content="article">
+<meta property="og:title" content="isis">
+<meta property="og:url" content="http://example.com/2024/05/15/isis/index.html">
+<meta property="og:site_name" content="MY BLOG">
+<meta property="og:description" content="中间系统到中间系统（IS-IS）什么是is-is?中间系统到中间系统IS-IS（Intermediate System to Intermediate System），是一种内部网关协议（IGP），用于自治系统内部。 IS-IS最初是国际化标准组织ISO为它的无连接网络协议CLNP设计的一种动态路由协议。后来IETF对IS-IS进行了扩充和修改，使其能够支持IP网络，修订后的IS-IS协议被称为集">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/headimg.jpg">
+<meta property="article:published_time" content="2024-05-15T13:41:24.112Z">
+<meta property="article:modified_time" content="2024-05-15T13:54:24.245Z">
+<meta property="article:author" content="空明.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/headimg.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/05/15/isis/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'isis',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-05-15 21:54:24'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/headimg.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="MY BLOG"><span class="site-name">MY BLOG</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">isis</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-05-15T13:41:24.112Z" title="发表于 2024-05-15 21:41:24">2024-05-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-05-15T13:54:24.245Z" title="更新于 2024-05-15 21:54:24">2024-05-15</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="isis"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="中间系统到中间系统（IS-IS）"><a href="#中间系统到中间系统（IS-IS）" class="headerlink" title="中间系统到中间系统（IS-IS）"></a>中间系统到中间系统（IS-IS）</h1><h3 id="什么是is-is"><a href="#什么是is-is" class="headerlink" title="什么是is-is?"></a>什么是is-is?</h3><p>中间系统到中间系统IS-IS（Intermediate System to Intermediate System），是一种内部网关协议（IGP），用于自治系统内部。</p>
+<p><em>IS-IS最初是国际化标准组织ISO为它的无连接网络协议CLNP设计的一种动态路由协议。后来IETF对IS-IS进行了扩充和修改，使其能够支持IP网络，修订后的IS-IS协议被称为集成化的IS-IS，如无明确说明，本课程IS-IS特指修订后的集成化IS-IS。</em></p>
+<h3 id="is-is协议特性？"><a href="#is-is协议特性？" class="headerlink" title="is-is协议特性？"></a>is-is协议特性？</h3><ul>
+<li>和OSPF一样，IS-IS也是一种<strong>链路状态协议</strong>，维护一个<strong>链路状态数据库LSDB</strong>，使用<strong>最短路径优先算法</strong>（SPF算法）进行路由计算。</li>
+<li>由于IS-IS的简便性及扩展性强的特点，目前在大型ISP的网络中被广泛地部署。</li>
+</ul>
+<p><em>SPF算法，即最短路径优先算法（Shortest Path First），也被称为Dijkstra算法，是由荷兰计算机科学家狄克斯特拉于1959年提出的。</em></p>
+<h3 id="is-is报文类型？"><a href="#is-is报文类型？" class="headerlink" title="is-is报文类型？"></a>is-is报文类型？</h3><p>IS-IS路由协议使用三大类报文：<strong>Hello报文</strong>、<strong>LSP报文</strong>和<strong>SNP报文</strong>，共计9种具体的报文。</p>
+<ol>
+<li>Hello报文：用于建立和维护邻居关系，也称IIH（IS-TO-IS Hello PDUs）<ul>
+<li>广播型网络中使用LAN IIH，Level-1邻居使用Level-1 LAN IIH， Level-2邻居使用Level-2 LAN IIH</li>
+<li>点对点网络使用P2P IIH<br> <em>LAN IIH与P2P IIH在格式上有所不同</em></li>
+</ul>
+</li>
+<li>LSP报文：链路状态报文LSP（Link State PDUs）, 用于交换链路状态信息（相当于OSPF中的LSA），类似于OSPF中的LSU报文。<ul>
+<li>Level-1 LSP：由Level-1 路由器和Level-1-2 路由器传递。</li>
+<li>Level-2 LSP：由Level-2 路由器和Level-1-2 路由器传递。</li>
+</ul>
+</li>
+<li>SNP报文：序列号报文SNP（Sequence Number PDUs），描述全部或部分数据库中的LSP来同步各LSDB, 维护各路由器LSDB的完整与同步。分为全序列号报文CSNP和部分序列号报文PSNP。<ul>
+<li><strong>CSNP</strong>：包含LSDB中所有LSP的摘要信息，用于保持邻居间LSDB的同步，类似于OSPF中的DD报文。分为Level-1 CSNP和Level-2 CSNP，分别用于Level-1邻居和Level-2 邻居的LSDB同步。</li>
+<li><strong>PSNP</strong>：包含部分LSP的摘要信息，用于请求邻居发送所需要的LSP或对收到的LSP进行确认，相当于OSPF中的LSR和LSACK。分为Level-1 PSNP和Level-2 PSNP，分别用于Level-1邻居和Level-2 邻居的LSDB同步。</li>
+</ul>
+</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">空明.</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2024/05/15/isis/">http://example.com/2024/05/15/isis/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">MY BLOG</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/headimg.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/05/15/%E7%AD%96%E7%95%A5%E8%B7%AF%E7%94%B1%EF%BC%88%E8%B7%AF%E7%94%B1%E9%87%8D%E5%AE%9A%E5%90%91%EF%BC%89/" title="策略路由（路由重定向）"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">策略路由（路由重定向）</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/headimg.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">空明.</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%AD%E9%97%B4%E7%B3%BB%E7%BB%9F%E5%88%B0%E4%B8%AD%E9%97%B4%E7%B3%BB%E7%BB%9F%EF%BC%88IS-IS%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">中间系统到中间系统（IS-IS）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFis-is"><span class="toc-number">1.0.1.</span> <span class="toc-text">什么是is-is?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#is-is%E5%8D%8F%E8%AE%AE%E7%89%B9%E6%80%A7%EF%BC%9F"><span class="toc-number">1.0.2.</span> <span class="toc-text">is-is协议特性？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#is-is%E6%8A%A5%E6%96%87%E7%B1%BB%E5%9E%8B%EF%BC%9F"><span class="toc-number">1.0.3.</span> <span class="toc-text">is-is报文类型？</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/15/isis/" title="isis">isis</a><time datetime="2024-05-15T13:41:24.112Z" title="发表于 2024-05-15 21:41:24">2024-05-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/05/15/%E7%AD%96%E7%95%A5%E8%B7%AF%E7%94%B1%EF%BC%88%E8%B7%AF%E7%94%B1%E9%87%8D%E5%AE%9A%E5%90%91%EF%BC%89/" title="策略路由（路由重定向）">策略路由（路由重定向）</a><time datetime="2024-05-15T10:34:37.576Z" title="发表于 2024-05-15 18:34:37">2024-05-15</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2024/05/10/hello-world/" title="Hello World">Hello World</a><time datetime="2024-05-10T11:11:57.765Z" title="发表于 2024-05-10 19:11:57">2024-05-10</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 空明.</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>

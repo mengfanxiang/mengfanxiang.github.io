@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>isis</title>
+      <link href="/2024/05/15/isis/"/>
+      <url>/2024/05/15/isis/</url>
+      
+        <content type="html"><![CDATA[<h1 id="中间系统到中间系统（IS-IS）"><a href="#中间系统到中间系统（IS-IS）" class="headerlink" title="中间系统到中间系统（IS-IS）"></a>中间系统到中间系统（IS-IS）</h1><h3 id="什么是is-is"><a href="#什么是is-is" class="headerlink" title="什么是is-is?"></a>什么是is-is?</h3><p>中间系统到中间系统IS-IS（Intermediate System to Intermediate System），是一种内部网关协议（IGP），用于自治系统内部。</p><p><em>IS-IS最初是国际化标准组织ISO为它的无连接网络协议CLNP设计的一种动态路由协议。后来IETF对IS-IS进行了扩充和修改，使其能够支持IP网络，修订后的IS-IS协议被称为集成化的IS-IS，如无明确说明，本课程IS-IS特指修订后的集成化IS-IS。</em></p><h3 id="is-is协议特性？"><a href="#is-is协议特性？" class="headerlink" title="is-is协议特性？"></a>is-is协议特性？</h3><ul><li>和OSPF一样，IS-IS也是一种<strong>链路状态协议</strong>，维护一个<strong>链路状态数据库LSDB</strong>，使用<strong>最短路径优先算法</strong>（SPF算法）进行路由计算。</li><li>由于IS-IS的简便性及扩展性强的特点，目前在大型ISP的网络中被广泛地部署。</li></ul><p><em>SPF算法，即最短路径优先算法（Shortest Path First），也被称为Dijkstra算法，是由荷兰计算机科学家狄克斯特拉于1959年提出的。</em></p><h3 id="is-is报文类型？"><a href="#is-is报文类型？" class="headerlink" title="is-is报文类型？"></a>is-is报文类型？</h3><p>IS-IS路由协议使用三大类报文：<strong>Hello报文</strong>、<strong>LSP报文</strong>和<strong>SNP报文</strong>，共计9种具体的报文。</p><ol><li>Hello报文：用于建立和维护邻居关系，也称IIH（IS-TO-IS Hello PDUs）<ul><li>广播型网络中使用LAN IIH，Level-1邻居使用Level-1 LAN IIH， Level-2邻居使用Level-2 LAN IIH</li><li>点对点网络使用P2P IIH<br> <em>LAN IIH与P2P IIH在格式上有所不同</em></li></ul></li><li>LSP报文：链路状态报文LSP（Link State PDUs）, 用于交换链路状态信息（相当于OSPF中的LSA），类似于OSPF中的LSU报文。<ul><li>Level-1 LSP：由Level-1 路由器和Level-1-2 路由器传递。</li><li>Level-2 LSP：由Level-2 路由器和Level-1-2 路由器传递。</li></ul></li><li>SNP报文：序列号报文SNP（Sequence Number PDUs），描述全部或部分数据库中的LSP来同步各LSDB, 维护各路由器LSDB的完整与同步。分为全序列号报文CSNP和部分序列号报文PSNP。<ul><li><strong>CSNP</strong>：包含LSDB中所有LSP的摘要信息，用于保持邻居间LSDB的同步，类似于OSPF中的DD报文。分为Level-1 CSNP和Level-2 CSNP，分别用于Level-1邻居和Level-2 邻居的LSDB同步。</li><li><strong>PSNP</strong>：包含部分LSP的摘要信息，用于请求邻居发送所需要的LSP或对收到的LSP进行确认，相当于OSPF中的LSR和LSACK。分为Level-1 PSNP和Level-2 PSNP，分别用于Level-1邻居和Level-2 邻居的LSDB同步。</li></ul></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>策略路由（路由重定向）</title>
       <link href="/2024/05/15/%E7%AD%96%E7%95%A5%E8%B7%AF%E7%94%B1%EF%BC%88%E8%B7%AF%E7%94%B1%E9%87%8D%E5%AE%9A%E5%90%91%EF%BC%89/"/>
       <url>/2024/05/15/%E7%AD%96%E7%95%A5%E8%B7%AF%E7%94%B1%EF%BC%88%E8%B7%AF%E7%94%B1%E9%87%8D%E5%AE%9A%E5%90%91%EF%BC%89/</url>
