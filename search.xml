@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>IPV6协议</title>
+      <link href="/2024/09/10/IPV6%E5%8D%8F%E8%AE%AE/"/>
+      <url>/2024/09/10/IPV6%E5%8D%8F%E8%AE%AE/</url>
+      
+        <content type="html"><![CDATA[<h1 id="IPV6协议"><a href="#IPV6协议" class="headerlink" title="IPV6协议"></a>IPV6协议</h1><h2 id="IPV6诞生背景"><a href="#IPV6诞生背景" class="headerlink" title="IPV6诞生背景"></a>IPV6诞生背景</h2><h3 id="IPV4的局限性"><a href="#IPV4的局限性" class="headerlink" title="IPV4的局限性"></a>IPV4的局限性</h3><ul><li>IPv4是目前广泛部署的互联网协议，经过多年的发展，已非常成熟，易于实现，得到所有厂商和设备的支持，但也有一些不足之处。<ul><li>能够提供的地址空间不足且分配不均。</li><li>互联网骨干路由器的路由表非常庞大。</li></ul></li></ul><h3 id="IPV6的优势"><a href="#IPV6的优势" class="headerlink" title="IPV6的优势"></a>IPV6的优势</h3><ul><li>IPv6采用128位地址长度，其地址数量总数可达2128个，它能让地球上每一粒沙子都可拥有一个IP地址。这不但解决了网络地址资源数量的问题，同时也为万物互联所限制的IP地址数量扫清了障碍。因此，相比IPv4，IPv6具有诸多优点：<ul><li>地址空间巨大</li><li>层次化的路由设计</li><li>效率高，扩展灵活</li><li>支持即插即用</li><li>更好的安全性保障</li><li>引入了流标签的概念</li></ul></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>DHCP协议</title>
       <link href="/2024/09/10/DHCP%E5%8D%8F%E8%AE%AE/"/>
       <url>/2024/09/10/DHCP%E5%8D%8F%E8%AE%AE/</url>
